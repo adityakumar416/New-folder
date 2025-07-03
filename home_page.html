@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abhishek Computer Center - Your Gateway to Digital Education in Bijnor</title>
+    <meta name="description" content="Abhishek Computer Center in Latifpur Urf Sipahiwala, Seohara, Bijnor offers comprehensive digital education courses and computer training for students.">
+    <meta name="keywords" content="computer center, digital education, computer courses, Seohara, Bijnor, Abhishek Computer Center">
+    <meta name="author" content="Abhishek Computer Center">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="https://placehold.co/32x32" alt="Abhishek Computer Center logo with blue and white colors showing a computer icon">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <style>
+        :root {
+            --primary-color: #2563eb;
+            --secondary-color: #1e40af;
+            --accent-color: #f59e0b;
+            --light-color: #f8fafc;
+            --dark-color: #1e293b;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--dark-color);
+            background-color: var(--light-color);
+        }
+        
+        .hero {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+        }
+        
+        .badge-new {
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+                opacity: 1;
+            }
+            50% {
+                transform: scale(1.05);
+                opacity: 0.8;
+            }
+            100% {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+        
+        .course-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        
+        .contact-icon {
+            transition: all 0.3s ease;
+        }
+        
+        .contact-icon:hover {
+            transform: scale(1.1);
+        }
+        
+        .map-container {
+            overflow: hidden;
+            padding-bottom: 56.25%;
+            position: relative;
+            height: 0;
+        }
+        
+        .map-container iframe {
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+        }
+        
+        .nav-link {
+            position: relative;
+        }
+        
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: var(--accent-color);
+            transition: width 0.3s ease;
+        }
+        
+        .nav-link:hover::after {
+            width: 100%;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+            <i class="fas fa-laptop-code text-3xl text-blue-600"></i>
+            <span class="font-bold text-xl text-blue-800">Abhishek Computer Center</span>
+            </div>
+            
+            <div class="hidden md:flex space-x-8">
+                <a href="#home" class="nav-link text-gray-700 hover:text-blue-600">Home</a>
+                <a href="#about" class="nav-link text-gray-700 hover:text-blue-600">About</a>
+                <a href="#courses" class="nav-link text-gray-700 hover:text-blue-600">Courses</a>
+                <a href="#services" class="nav-link text-gray-700 hover:text-blue-600">Services</a>
+                <a href="#contact" class="nav-link text-gray-700 hover:text-blue-600">Contact</a>
+            </div>
+            
+            <button id="mobile-menu-button" class="md:hidden text-gray-700">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-200">
+            <div class="container mx-auto px-4 py-2 flex flex-col">
+                <a href="#home" class="py-2 text-gray-700 hover:text-blue-600">Home</a>
+                <a href="#about" class="py-2 text-gray-700 hover:text-blue-600">About</a>
+                <a href="#courses" class="py-2 text-gray-700 hover:text-blue-600">Courses</a>
+                <a href="#services" class="py-2 text-gray-700 hover:text-blue-600">Services</a>
+                <a href="#contact" class="py-2 text-gray-700 hover:text-blue-600">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero text-white py-16 md:py-24">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-8 md:mb-0">
+                <div class="flex items-center mb-4">
+                    <span class="badge-new bg-yellow-500 text-white px-3 py-1 rounded-full text-sm font-semibold mr-3">Newly Established</span>
+                    <span class="text-sm">June 2025</span>
+                </div>
+                <h1 class="text-4xl md:text-5xl font-bold mb-4">Abhishek Computer Center</h1>
+                <p class="text-xl mb-6">Your Gateway to Digital Education</p>
+                <p class="mb-8">Providing quality computer education in Latifpur Urf Sipahiwala, Seohara, Bijnor</p>
+                <div class="flex space-x-4">
+                    <a href="#contact" class="bg-white text-blue-700 px-6 py-3 rounded-full font-semibold hover:bg-gray-100 transition duration-300">Contact Us</a>
+                    <a href="#courses" class="border-2 border-white text-white px-6 py-3 rounded-full font-semibold hover:bg-white hover:text-blue-700 transition duration-300">Our Courses</a>
+                </div>
+            </div>
+              <div class="md:w-1/2">
+        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/0137c95c-bddb-4031-8963-525835c0859d.png" alt="Students attending computer classes in modern lab with instructor" class="rounded-lg shadow-xl">
+      </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-blue-800">About Our Center</h2>
+            
+            <div class="flex flex-col md:flex-row gap-8">
+                <div class="md:w-1/2">
+                    <img src="https://vishvasdelhi.com/wp-content/uploads/2024/04/basic-cmp.jpg" alt="Founder of Abhishek Computer Center interacting with students in the computer lab" class="rounded-lg shadow-md">            </div>
+                <div class="md:w-1/2">
+                    <h3 class="text-2xl font-semibold mb-4 text-gray-800">Welcome to Abhishek Computer Center</h3>
+                    <p class="mb-4 text-gray-700">Located in the heart of Latifpur Urf Sipahiwala, Seohara, Bijnor, we are committed to providing quality digital education to empower our students with essential computer skills for the modern world.</p>
+                    <p class="mb-4 text-gray-700">Our newly established center in June 2025 brings together experienced instructors and state-of-the-art facilities to create an ideal learning environment.</p>
+                    
+                    <div class="mt-6">
+                        <h4 class="font-semibold mb-2 text-gray-800">Our Mission:</h4>
+                        <ul class="list-disc pl-5 text-gray-700 space-y-2">
+                            <li>To make digital education accessible to everyone in our community</li>
+                            <li>To provide practical, job-oriented computer training</li>
+                            <li>To bridge the digital divide in our region</li>
+                            <li>To foster a culture of continuous learning in technology</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section id="courses" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-4 text-blue-800">Our Popular Courses</h2>
+            <p class="text-center mb-12 text-gray-600 max-w-2xl mx-auto">We offer comprehensive digital education programs tailored to meet the needs of students at all levels.</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Course 1 -->
+                <div class="course-card bg-white rounded-lg shadow-md overflow-hidden transition duration-300">
+                    <img src="https://www.ics-education.com/wp-content/uploads/2023/04/Computer-Training-Institute-1.jpg" alt="Basic computer course training session at Abhishek Computer Center" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">Basic Computer Course</h3>
+                        <p class="text-gray-600 mb-4">Learn fundamental computer operations, MS Office, and internet basics.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-yellow-600 font-semibold">Duration: 3 Months</span>
+                            <button class="text-blue-600 font-semibold hover:text-blue-800">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Course 2 -->
+                <div class="course-card bg-white rounded-lg shadow-md overflow-hidden transition duration-300">
+                    <img src="https://5.imimg.com/data5/SELLER/Default/2020/12/SA/HT/VM/40700069/advanced-diploma-in-computer-applications-adca-.jpg" alt="Advanced diploma in computer applications course materials and students working" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">ADCA (Advanced Diploma in Computer Applications)</h3>
+                        <p class="text-gray-600 mb-4">Comprehensive training in desktop publishing, accounting software, and programming basics.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-yellow-600 font-semibold">Duration: 6 Months</span>
+                            <button class="text-blue-600 font-semibold hover:text-blue-800">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+                
+               <!-- Course 3 -->
+                <div class="course-card bg-white rounded-lg shadow-md overflow-hidden transition duration-300" style="display: none;">
+                    <img src="https://placehold.co/600x400" alt="Graphic design workshop with students creating digital artwork" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">Graphic Design</h3>
+                        <p class="text-gray-600 mb-4">Master Photoshop, CorelDraw and Illustrator for professional design work.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-yellow-600 font-semibold">Duration: 6 Months</span>
+                            <button class="text-blue-600 font-semibold hover:text-blue-800">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Course 4 -->
+                <div class="course-card bg-white rounded-lg shadow-md overflow-hidden transition duration-300">
+                    <img src="https://media.istockphoto.com/id/1163541604/photo/close-up-back-rear-behind-photo-handsome-he-him-his-guy-typing-writing-keyboard-development.jpg?s=612x612&w=0&k=20&c=W8QsLaicVoOPC1i4E6Q8ZrhQK_wkEmpcBeT3SK0wAuw=" alt="Programming fundamentals course with code examples on screen" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">Programming Fundamentals</h3>
+                        <p class="text-gray-600 mb-4">Learn Python, Java, and C++ basics for problem solving and application development.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-yellow-600 font-semibold">Duration: 3 Months</span>
+                            <button class="text-blue-600 font-semibold hover:text-blue-800">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Course 5 -->
+                <div class="course-card bg-white rounded-lg shadow-md overflow-hidden transition duration-300" style="display: none;">
+                    <img src="https://placehold.co/600x400" alt="Digital marketing course showing analytics dashboard and social media platforms" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">Digital Marketing</h3>
+                        <p class="text-gray-600 mb-4">Master SEO, social media marketing, and Google Ads to promote businesses online.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-yellow-600 font-semibold">Duration: 4 Months</span>
+                            <button class="text-blue-600 font-semibold hover:text-blue-800">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Course 6 -->
+                <div class="course-card bg-white rounded-lg shadow-md overflow-hidden transition duration-300" style="display: none;">
+                    <img src="https://placehold.co/600x400" alt="Computer hardware training session with components displayed" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">Hardware & Networking</h3>
+                        <p class="text-gray-600 mb-4">Learn computer assembly, troubleshooting, and basic networking concepts.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-yellow-600 font-semibold">Duration: 5 Months</span>
+                            <button class="text-blue-600 font-semibold hover:text-blue-800">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <button class="bg-blue-600 text-white px-8 py-3 rounded-full font-semibold hover:bg-blue-700 transition duration-300">View All Courses</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-blue-800">Additional Services</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Service 1 -->
+                <div class="bg-blue-50 rounded-lg p-6 border border-blue-100">
+                    <div class="text-blue-600 mb-4 text-3xl">
+                        <i class="fas fa-print"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2 text-gray-800">Printing Services</h3>
+                    <p class="text-gray-600">High quality printing for documents, assignments, and projects at competitive prices.</p>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="bg-blue-50 rounded-lg p-6 border border-blue-100">
+                    <div class="text-blue-600 mb-4 text-3xl">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2 text-gray-800">Computer Repair</h3>
+                    <p class="text-gray-600">Expert hardware and software troubleshooting for all your computer issues.</p>
+                </div>
+                
+                <!-- Service 3 -->
+                <div class="bg-blue-50 rounded-lg p-6 border border-blue-100">
+                    <div class="text-blue-600 mb-4 text-3xl">
+                        <i class="fas fa-id-card"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2 text-gray-800">Government Forms</h3>
+                    <p class="text-gray-600">Assistance with filling and submitting online government applications.</p>
+                </div>
+                
+                <!-- Service 4 -->
+                <div class="bg-blue-50 rounded-lg p-6 border border-blue-100">
+                    <div class="text-blue-600 mb-4 text-3xl">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2 text-gray-800">Project Assistance</h3>
+                    <p class="text-gray-600">Guidance and support for school and college computer projects.</p>
+                </div>
+            </div>
+            
+            <div class="mt-12 bg-yellow-50 border border-yellow-200 rounded-lg p-6">
+                <h3 class="text-xl font-semibold mb-3 text-yellow-800">Special Offer!</h3>
+                <p class="text-gray-700 mb-4">Enroll in any two courses and get a <span class="font-bold text-yellow-600">10% discount</span> on the total fee.</p>
+                <p class="text-gray-600">Limited time offer for newly established center in June 2025.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-blue-800">What Our Students Say</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <img src="https://placehold.co/80x80" alt="Rahul Kumar, Student at Abhishek Computer Center" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-semibold">Rahul Kumar</h4>
+                            <p class="text-sm text-gray-500">Basic Computer Course Student</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700">"The instructors at Abhishek Computer Center are very patient and knowledgeable. I learned computer basics quickly with their practical teaching methods."</p>
+                    <div class="mt-3 text-yellow-500">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <img src="https://placehold.co/80x80" alt="Priya Sharma, ADCA Course Student" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-semibold">Priya Sharma</h4>
+                            <p class="text-sm text-gray-500">ADCA Course Student</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700">"The ADCA course covered everything from accounting software to web design. I got job offers even before completing the course!"</p>
+                    <div class="mt-3 text-yellow-500">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <img src="https://placehold.co/80x80" alt="Vikram Singh, Computer Repair Service Customer" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-semibold">Vikram Singh</h4>
+                            <p class="text-sm text-gray-500">Service Customer</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700">"They fixed my laptop quickly at a reasonable price. Now I bring all my family's devices here for repair and maintenance."</p>
+                    <div class="mt-3 text-yellow-500">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-white border-t border-gray-200">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-blue-800">Contact Us</h2>
+            
+            <div class="flex flex-col md:flex-row gap-8">
+                <!-- Contact Info -->
+                <div class="md:w-1/3">
+                    <div class="bg-blue-50 rounded-lg p-6 h-full">
+                        <h3 class="text-xl font-semibold mb-4 text-gray-800">Get in Touch</h3>
+                        
+                        <div class="space-y-4">
+                            <div class="flex items-start">
+                                <div class="text-blue-600 mt-1 mr-4 contact-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium text-gray-800">Address</h4>
+                                    <p class="text-gray-600">Latifpur Urf Sipahiwala, Seohara, Bijnor, Uttar Pradesh</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="text-blue-600 mt-1 mr-4 contact-icon">
+                                    <i class="fas fa-phone-alt"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium text-gray-800">Primary Number</h4>
+                                    <p class="text-gray-600">
+                                        <a href="tel:+919927631525" class="hover:text-blue-600">+91 9927631525</a>
+                                        <a href="https://wa.me/919927631525" class="ml-2 text-green-600 hover:text-green-700">
+                                            <i class="fab fa-whatsapp"></i> WhatsApp
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="text-blue-600 mt-1 mr-4 contact-icon">
+                                    <i class="fas fa-phone-alt"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium text-gray-800">Secondary Number</h4>
+                                    <p class="text-gray-600">
+                                        <a href="tel:+918979116063" class="hover:text-blue-600">+91 8979116063</a>
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="text-blue-600 mt-1 mr-4 contact-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium text-gray-800">Email</h4>
+                                    <p class="text-gray-600">
+                                        <a href="mailto:abhishek0702224@gmail.com" class="hover:text-blue-600">abhishek0702224@gmail.com</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-8">
+                            <h4 class="font-medium text-gray-800 mb-3">Opening Hours</h4>
+                            <ul class="space-y-2 text-gray-600">
+                                <li class="flex justify-between">
+                                    <span>Monday - Friday</span>
+                                    <span>9:00 AM - 8:00 PM</span>
+                                </li>
+                                <li class="flex justify-between">
+                                    <span>Saturday</span>
+                                    <span>10:00 AM - 6:00 PM</span>
+                                </li>
+                                <li class="flex justify-between">
+                                    <span>Sunday</span>
+                                    <span>Closed</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Contact Form -->
+                <div class="md:w-1/3">
+                    <form class="bg-white border border-gray-200 rounded-lg p-6 h-full">
+                        <h3 class="text-xl font-semibold mb-4 text-gray-800">Send us a Message</h3>
+                        
+                        <div class="mb-4">
+                            <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Name</label>
+                            <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        </div>
+                        
+                        <div class="mb-4">
+                            <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email</label>
+                            <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        </div>
+                        
+                        <div class="mb-4">
+                            <label for="phone" class="block text-sm font-medium text-gray-700 mb-1">Phone</label>
+                            <input type="tel" id="phone" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        </div>
+                        
+                        <div class="mb-4">
+                            <label for="subject" class="block text-sm font-medium text-gray-700 mb-1">Subject</label>
+                            <select id="subject" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                                <option value="" disabled selected>Select a subject</option>
+                                <option value="course">Course Inquiry</option>
+                                <option value="service">Service Request</option>
+                                <option value="feedback">Feedback</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Message</label>
+                            <textarea id="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="bg-blue-600 text-white px-6 py-2 rounded-md font-medium hover:bg-blue-700 transition duration-300 w-full">Send Message</button>
+                    </form>
+                </div>
+                
+                <!-- Map -->
+                <div class="md:w-1/3">
+                    <div class="bg-white border border-gray-200 rounded-lg overflow-hidden h-full">
+                        <h3 class="text-xl font-semibold p-6 text-gray-800">Our Location</h3>
+                        <div class="map-container">
+                            <!-- Google Map Embed -->
+                            <iframe 
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3467.1637576233637!2d78.57051231510963!3d29.68788868197608!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39097c439f77036d%3A0x6e9d891b4f0b7a2d!2sLatifpur%20Urf%20Sipahiwala%2C%20Seohara%2C%20Uttar%20Pradesh%20246501!5e0!3m2!1sen!2sin!4v1656575372342!5m2!1sen!2sin" 
+                                allowfullscreen="" 
+                                loading="lazy" 
+                                referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                   <div class="flex items-center mb-4" style="gap: 0.5rem;">
+                        <i class="fas fa-laptop-code text-3xl text-blue-600"></i>
+                        <span class="text-xl font-bold">Abhishek Computer Center</span>
+                    </div>
+                    <p class="text-gray-400">Your Gateway to Digital Education</p>
+                    <p class="text-gray-400 text-sm mt-1">Newly Established June 2025</p>
+                </div>
+                
+                <div class="mb-6 md:mb-0">
+                    <h4 class="font-semibold mb-3">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-gray-400 hover:text-white">Home</a></li>
+                        <li><a href="#courses" class="text-gray-400 hover:text-white">Courses</a></li>
+                        <li><a href="#services" class="text-gray-400 hover:text-white">Services</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="mb-6 md:mb-0">
+                    <h4 class="font-semibold mb-3">Connect With Us</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white text-xl" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white text-xl" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://wa.me/919927631525" class="text-gray-400 hover:text-white text-xl" aria-label="WhatsApp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white text-xl" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
+                    
+                    <div class="mt-4">
+                        <h4 class="font-semibold mb-2">Subscribe to Newsletter</h4>
+                        <div class="flex">
+                            <input type="email" placeholder="Your email" class="px-3 py-2 text-gray-900 rounded-l focus:outline-none">
+                            <button class="bg-blue-600 px-3 py-2 rounded-r hover:bg-blue-700">
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400 text-sm">
+                <p>© 2025 Abhishek Computer Center. All rights reserved.</p>
+                <p class="mt-2">Designed with ❤️ for digital education in Seohara, Bijnor</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+        
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    // Close mobile menu if open
+                    const mobileMenu = document.getElementById('mobile-menu');
+                    mobileMenu.classList.add('hidden');
+                    
+                    // Scroll to target
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+        
+        // Form submission handling
+        const contactForm = document.querySelector('form');
+        if (contactForm) {
+            contactForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                // Form validation
+                const name = document.getElementById('name').value.trim();
+                const email = document.getElementById('email').value.trim();
+                const message = document.getElementById('message').value.trim();
+                
+                if (!name || !email || !message) {
+                    alert('Please fill in all required fields');
+                    return;
+                }
+                
+                // Simple email validation
+                if (!email.includes('@') || !email.includes('.')) {
+                    alert('Please enter a valid email address');
+                    return;
+                }
+                
+                // In a real implementation, you would send the form data to a server
+                alert('Thank you for your message! We will get back to you soon.');
+                this.reset();
+            });
+        }
+        
+        // Fixed navigation on scroll
+        window.addEventListener('scroll', function() {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('shadow-lg');
+            } else {
+                nav.classList.remove('shadow-lg');
+            }
+        });
+    </script>
+</body>
+</html>
